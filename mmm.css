@@ -12,6 +12,11 @@ html, body {
     height: 100vh;
 }
 
+.hb {
+    position: absolute;
+    top: 5px;
+}
+
 /* За замовчуванням трохи менші гіфки */
 body img {
     max-width: 250px;
