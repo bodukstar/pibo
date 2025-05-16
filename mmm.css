@@ -1,6 +1,54 @@
-* {
+html, body {
+    margin: 0;
+    padding: 0;
     background-image: url('img/U3xO.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* За замовчуванням трохи менші гіфки */
+body img {
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Другий зсув вправо */
+body img:nth-child(2) {
+    transform: translateX(20px);
+}
+
+/* Третій зсув вліво */
+body img:nth-child(3) {
+    transform: translateX(-20px);
+}
+
+/* Перша гіфка трохи вища */
+body img:nth-child(1) {
+    max-height: 600px;
+    width: auto;
+}
+
+/* Медіа-запит під iPhone 11 */
+@media (width: 828px) and (height: 1792px) and (orientation: portrait) {
+    body img {
+        max-width: 200px;
+        margin: 8px;
+    }
+    body img:nth-child(1) {
+        max-height: 500px;
+    }
+    body img:nth-child(2) {
+        transform: translateX(15px);
+    }
+    body img:nth-child(3) {
+        transform: translateX(-15px);
+    }
 }
