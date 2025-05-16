@@ -41,6 +41,21 @@ body img:nth-child(1) {
     width: auto;
 }
 
+.fon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: flex; /* Використовуємо flexbox для центрування */
+    justify-content: center; /* Центруємо вміст по горизонталі */
+    align-items: flex-start; /* Вирівнюємо вміст по верхньому краю */
+}
+
+
+
+
 /* Медіа-запит під iPhone 11 */
 @media (width: 828px) and (height: 1792px) and (orientation: portrait) {
     body img {
